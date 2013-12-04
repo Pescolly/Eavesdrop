@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    <EditText android:id="@+id/userNameEntry"
+              android:hint="@string/username"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dip"
+              android:layout_marginBottom="20dip"
+              android:singleLine="true"/>
+    <!--  Password Label -->
+    <EditText android:id="@+id/passwordEntry"
+              android:hint="@string/password"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dip"
+              android:singleLine="true"
+              android:password="true"/>
+    <!-- ApplicationFile button -->
+    <Button android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/login"/>
+    <!-- Link to Registration Screen -->
+    <TextView android:id="@+id/link_to_register"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dip"
+              android:layout_marginBottom="40dip"
+              android:text="@string/registration"
+              android:gravity="center"
+              android:textSize="20dip"
+              android:textColor="#0b84aa"/>
+</LinearLayout>

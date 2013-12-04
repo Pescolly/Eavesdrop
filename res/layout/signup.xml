@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+        <!-- Full Name Label -->
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#FFFFFF"
+                  android:text="user name"/>
+        <EditText android:id="@+id/reg_userName"
+                  android:hint="enter username"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dip"
+                  android:singleLine="true"
+                  android:layout_marginBottom="20dip"/>
+        <!--  Email Label -->
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#FFFFFF"
+                  android:text="email"/>
+        <EditText android:id="@+id/reg_email"
+                  android:hint="email address"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dip"
+                  android:singleLine="true"
+                  android:layout_marginBottom="20dip"/>
+        <!-- Password Label -->
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#FFFFFF"
+                  android:text="password"/>
+        <EditText android:id="@+id/reg_password"
+                  android:hint="enter password"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:password="true"
+                  android:singleLine="true"
+                  android:layout_marginTop="5dip"/>
+        <!-- Register Button -->
+        <Button android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Register New Account"/>
+        <!-- Link to ApplicationFile Screen -->
+        <TextView android:id="@+id/link_to_login"
+                  android:layout_width="fill_parent"
+                  android:layout_height="30dp"
+                  android:layout_marginTop="40dip"
+                  android:layout_marginBottom="40dip"
+                  android:text="Already has account! Login here"
+                  android:gravity="center"
+                  android:textSize="20dip"
+                  android:textColor="#025f7c"/>
+
+    </LinearLayout>
