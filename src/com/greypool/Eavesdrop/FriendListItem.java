@@ -20,8 +20,8 @@ public class FriendListItem extends ArrayAdapter<ExtendedParseUser> {
 	private final Activity context;
 	public ExtendedParseUser USERARRAY[];
 
-	public FriendListItem(Activity context, ExtendedParseUser[] incomingArray){
-		super(context, R.layout.friendlist_item, incomingArray);
+	public FriendListItem(Activity context, int resource, ExtendedParseUser[] incomingArray){
+		super(context, resource, incomingArray);
 		View v;
 		this.context = context;
 		this.USERARRAY = incomingArray;							//assign local USERARRAY to incoming from main menu

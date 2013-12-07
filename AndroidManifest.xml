@@ -29,6 +29,7 @@
         <activity android:name=".SignUp"></activity>
         <activity android:name=".FriendList"></activity>
         <service android:name=".RecordProcess"></service>
+        <service android:name=".PopulateLocalUserDB"></service>
     </application>
 
 </manifest>
