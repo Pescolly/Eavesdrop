@@ -6,7 +6,7 @@
     android:installLocation="auto">
 
 
-    <uses-sdk android:minSdkVersion="6" android:targetSdkVersion="15"/>
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
 
     <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
@@ -29,7 +29,7 @@
         <activity android:name=".SignUp"></activity>
         <activity android:name=".FriendList"></activity>
         <service android:name=".RecordProcess"></service>
-        <service android:name=".PopulateLocalUserDB"></service>
+        <service android:name=".PopulateLocalContactDB"></service>
     </application>
 
 </manifest>

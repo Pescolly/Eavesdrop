@@ -41,30 +41,35 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Errors" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="SystemOut" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7798f1f-749b-47b7-92e6-d18b6168a0ed" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalUserDB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBUpdate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalUserDB.java" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalContactDB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListItem.java" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/friendlist.xml" afterPath="$PROJECT_DIR$/res/layout/friendlist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java" afterPath="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Eavesdrop.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386155496853" ignored="false" />
-    <file path="/FriendList.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386336117503" ignored="false" />
+    <file path="/FriendList.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386594439075" ignored="false" />
     <file path="/ApplicationFile.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386157916438" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386335553279" ignored="false" />
-    <file path="/Dummy.txt" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386331713840" ignored="false" />
+    <file path="/Dummy.txt" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386594401628" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386158045618" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386158045618" ignored="false" />
     <file path="/fragment.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386161588311" ignored="false" />
     <file path="/friendlist.xml" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386163831354" ignored="false" />
     <file path="/FriendListItem.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386164196853" ignored="false" />
-    <file path="/PopulateLocalUserDB.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386335912114" ignored="false" />
+    <file path="/PopulateLocalUserDB.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386415237000" ignored="false" />
+    <file path="/ContactDB.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386503072534" ignored="false" />
+    <file path="/PopulateLocalContactDB.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386584908170" ignored="false" />
+    <file path="/FriendListUpdate.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386581397219" ignored="false" />
+    <file path="/Login.java" changelist="e7798f1f-749b-47b7-92e6-d18b6168a0ed" time="1386593225437" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +84,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -115,7 +121,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -128,63 +133,49 @@
       <file leaf-file-name="FriendList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.38338658">
+            <state line="50" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.28434506">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1705#1754#0" expanded="true" />
+                <element signature="e#922#1088#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1715#1734#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecordProcess.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/RecordProcess.java">
+      <file leaf-file-name="FriendListUpdate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="13" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+            <state line="42" column="24" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PopulateLocalUserDB.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalUserDB.java">
+      <file leaf-file-name="PopulateLocalContactDB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalContactDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="30" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="53" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0">
+            <state line="50" column="31" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendListItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListItem.java">
+      <file leaf-file-name="LocalContactDBHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="41" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+            <state line="21" column="50" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friendlist.xml" pinned="true" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/friendlist.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="LocalContactDBUpdate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="46" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1386163832000" expanded="true" signature="111:803" placeholder="..." />
-              </folding>
+            <state line="14" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -213,15 +204,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/ExtendedParseUser.java" />
-        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java" />
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/RecordProcess.java" />
-        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/Login.java" />
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/SignUp.java" />
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/ApplicationFile.java" />
         <option value="$PROJECT_DIR$/res/layout/friendlist.xml" />
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListItem.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalUserDB.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/ContactDB.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDB.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalContactDB.java" />
+        <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/Login.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java" />
       </list>
     </option>
@@ -257,6 +253,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,17 +338,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
@@ -546,14 +543,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22646104" sideWeight="0.76495725" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2522936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35626912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -562,14 +558,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19854133" sideWeight="0.7477064" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19854133" sideWeight="0.6437309" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6011396" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6011396" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22646104" sideWeight="0.76495725" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -640,33 +637,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/friendlist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="17" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1705#1754#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+        <state line="13" column="46" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/friendlist.xml">
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1386163832000" expanded="true" signature="111:803" placeholder="..." />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.properties">
@@ -688,16 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.038071066">
-          <folding>
-            <element signature="e#1729#2368#0" expanded="true" />
-            <element signature="e#2361#2362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/SignUp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="-0.30456853">
@@ -708,70 +676,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/friendlist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.30456853">
+        <state line="13" column="46" selection-start="716" selection-end="716" vertical-scroll-proportion="0.33854166">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/RecordProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="520" selection-end="520" vertical-scroll-proportion="0.23961662">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/ExtendedParseUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.39086294">
+        <state line="14" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.33546326">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/friendlist.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1386163832000" expanded="true" signature="111:803" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+        <state line="15" column="16" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1355#1424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="50" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/RecordProcess.java">
+    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/LocalContactDBUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalContactDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="31" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.08264463">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="53" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.3783784">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/PopulateLocalUserDB.java">
+    <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendListUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="42" column="24" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/greypool/Eavesdrop/FriendList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.38338658">
+        <state line="50" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.28434506">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1705#1754#0" expanded="true" />
+            <element signature="e#922#1088#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1715#1734#0" expanded="true" />
           </folding>
         </state>
       </provider>

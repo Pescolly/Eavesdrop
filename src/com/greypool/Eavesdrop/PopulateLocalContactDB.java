@@ -1,12 +1,12 @@
 package com.greypool.Eavesdrop;
 
 import android.app.IntentService;
-import android.app.Service;
 import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
-import android.os.IBinder;
 import android.provider.ContactsContract;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
@@ -19,16 +19,36 @@ import java.util.List;
  * Date: 12/6/13
  * Time: 4:13 AM
  */
-public class PopulateLocalUserDB extends IntentService {
+public class PopulateLocalContactDB extends IntentService {
 
-	public PopulateLocalUserDB(String name){
-		super(name);
+	public boolean FINISHED_SIGNAL = false;
+
+	private SQLiteDatabase contactsDatabase;
+	private LocalContactDBHelper contactDBhelper;
+	private String[] contactDBColumns = {LocalContactDBHelper.COLUMN_ID, LocalContactDBHelper.USERNAME,
+			LocalContactDBHelper.PHONENUMBER, LocalContactDBHelper.EMAIL, LocalContactDBHelper.AVAILABLE};
+
+	public PopulateLocalContactDB(){
+		super("populateLocalContactDB");					//create service and name for debugging purposes
 	}
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
-		ExtendedParseUser[] users;
-		users = getNames();
+		System.out.println("Creating contacts array");
+		ExtendedParseUser[] contacts = null;
+		contactDBhelper = new LocalContactDBHelper(this);
+		contacts = getNames();						//create array from getNames method
+		contactsDatabase = contactDBhelper.getWritableDatabase();		//open DB with helper
+		ContentValues values = new ContentValues();
+		System.out.println("Adding contacts to database");
+		for(int index = 0; index < contacts.length; index++){	//populate local contacts DB with contacts array
+			values.put(contactDBColumns[1], contacts[index].USERNAME);
+			values.put(contactDBColumns[2], contacts[index].PHONENUMBER);
+			values.put(contactDBColumns[3], contacts[index].EMAIL);
+			values.put(contactDBColumns[4], contacts[index].AVAILABLE);
+		}
+		System.out.println("Database created");
+		FINISHED_SIGNAL = true;
 	}
 
 	private ExtendedParseUser[] getNames() {
