@@ -8,6 +8,7 @@ import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.os.Environment;
 import android.os.IBinder;
+import com.parse.ParseCloud;
 import com.parse.ParseFile;
 
 import java.io.ByteArrayOutputStream;
@@ -35,6 +36,9 @@ public class RecordProcess extends Service {
 	ByteBuffer audioBuffer;				// create buffer for full audio recording
 
 	byte byteStream[] = new byte[BUFFER_SIZE*10];
+
+
+	//TODO: wait for _start_recording message from parse, use ParseCloud object
 
 
 	public IBinder onBind(Intent intent){

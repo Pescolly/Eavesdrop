@@ -1,8 +1,12 @@
 package com.greypool.Eavesdrop;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.widget.ImageView;
 import com.parse.ParseClassName;
 import com.parse.ParseUser;
+
+import java.io.Serializable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,7 +26,5 @@ public class ExtendedParseUser extends ParseUser{
 	public ExtendedParseUser(){
 		super();
 		System.out.println("constructor");
-
 	}
-
 }

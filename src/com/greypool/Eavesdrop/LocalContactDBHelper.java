@@ -3,6 +3,7 @@ package com.greypool.Eavesdrop;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Parcelable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Date: 12/7/13
  * Time: 4:09 AM
  */
-public class LocalContactDBHelper extends SQLiteOpenHelper {
+public class LocalContactDBHelper extends SQLiteOpenHelper{
 
 	public static final String TABLENAME = "CachedContacts";						//table and query strings
 	public static final String COLUMN_ID = "id INTEGER PRIMARY KEY AUTOINCREMENT";

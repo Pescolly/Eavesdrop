@@ -28,6 +28,7 @@ public class FriendListItem extends ArrayAdapter<ExtendedParseUser> {
 		System.out.println("friendlist object built");
 	}
 
+	//TODO: send username to parse cloud to bounce '_start_record' message
 
 	@Override
 	public View getView(int position, View view, ViewGroup parent){
